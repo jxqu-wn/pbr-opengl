@@ -1,0 +1,7 @@
+include
+bin
+lib
+build
+.vscode
+.vs
+.idea
