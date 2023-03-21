@@ -32,7 +32,7 @@ int main(){
         return -1;
     }
 
-    Shader shader("/home/jxqu/Projects/Graphics/OpenGL/src/nothing.vert", "/home/jxqu/Projects/Graphics/OpenGL/src/nothing.frag");
+    Shader shader("../src/nothing.vert", "../src/nothing.frag");
 
     // render loop
     while(!glfwWindowShouldClose(window)){

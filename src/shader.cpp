@@ -1,10 +1,15 @@
 #include "shader.h"
 
+#include <filesystem>
+
 Shader::Shader(const char* vertexPath, const char* fragmentPath){
     std::string vertexCode;
     std::string fragmentCode;
     std::ifstream vertexShaderFile;
     std::ifstream fragmentShaderFile;
+
+    // std::cout << std::filesystem::current_path() << std::endl;
+    // result: ${PROJECT_DIR/build}
 
     // enable ifstream throw exception
     vertexShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
